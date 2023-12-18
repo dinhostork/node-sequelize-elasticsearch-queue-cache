@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import { Controller } from '../../presentation/protocols';
-import { HttpRequest, HttpResponse } from '../../shared/http/http.protocol';
+import { Controller } from '../../../presentation/protocols';
+import { HttpRequest, HttpResponse } from '../../../shared/http/http.protocol';
 
 export const adaptRoute = (controller: Controller) => {
 	return async (req: Request, res: Response) => {
