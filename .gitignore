@@ -34,4 +34,5 @@ logs
 .DS_Store
 Thumbs.db
 
-*.lock
+yarn.lock
+temp
