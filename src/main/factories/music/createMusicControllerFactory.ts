@@ -1,6 +1,6 @@
 import { CreateMusic } from '../../../data/useCases/CreateMusicUseCase';
 import { MusicRepository } from '../../../infraestructure/db/mysql/MusicRepository';
-import { CreateMusicController } from '../../../presentation/app/Music/CreateMusic.controller';
+import { CreateMusicController } from '../../../presentation/app/Music/controller/CreateMusic.controller';
 
 export const createMusicControllerFactory = (): CreateMusicController => {
 	const createMusicRepository = new MusicRepository();
