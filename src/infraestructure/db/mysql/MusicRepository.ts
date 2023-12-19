@@ -15,6 +15,7 @@ export class MusicRepository implements CreateMusicRepository, FindAllMusicRepos
 		return createdMusic.dataValues;
 	}
 
+	//just for comparison
 	async findAllMusic(): Promise<Music[]> {
 		const musics = await Music.findAll();
 		return musics;
