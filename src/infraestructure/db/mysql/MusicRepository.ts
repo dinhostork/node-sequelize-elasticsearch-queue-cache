@@ -10,7 +10,9 @@ export class MusicRepository implements CreateMusicRepository, FindAllMusicRepos
 			lyrics: music.lyrics,
 			youtubeLink: music.youtubeLink,
 		});
-		return createdMusic;
+
+		
+		return createdMusic.dataValues;
 	}
 
 	async findAllMusic(): Promise<Music[]> {
